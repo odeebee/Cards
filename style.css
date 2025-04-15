@@ -1,0 +1,60 @@
+:root {
+    --grid-rows: 1;
+    --grid-cols: 1;
+}
+
+#displaycontainer{
+    display:grid;
+    grid-template-rows: repeat(var(--grid-rows),1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+
+}
+
+#cardscontainer{
+    display:grid;
+    grid-template-rows: repeat(var(--grid-rows),1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+
+}
+
+#container{
+    display: flex;
+    gap: 10px;
+}
+
+.grid-item {
+    padding: 25px
+}
+
+body{
+    background-color: gray;
+}
+
+#border1{
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    background-color: white;
+}
+
+#border2{
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    background-color: white;
+    width:min-content;
+    flex-wrap: wrap;
+}
+
+#centred{
+    text-align: center;
+}
+
+#game{
+    display:none;
+}
+
+#button{
+    width: 50px;
+    height: 50px;
+}
